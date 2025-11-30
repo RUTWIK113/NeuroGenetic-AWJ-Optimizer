@@ -4,6 +4,16 @@ from control.ga_optimizer import run_genetic_algorithm
 from vision.monitoring import measure_nozzle_diameter
 from verify_params import verify_parameters_with_llm
 
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+api_key = os.getenv("GOOGLE_API_KEY")
+
+print("API Key loaded:", api_key)
+
 # --- 1. CONFIGURATION & RANGES ---
 
 # These names must match the columns in your training data

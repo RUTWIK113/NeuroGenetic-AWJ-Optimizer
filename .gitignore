@@ -14,3 +14,6 @@ __pycache__/
 
 # Windows system files
 desktop.ini
+
+# Environment variables
+.env
